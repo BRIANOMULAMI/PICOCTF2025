@@ -1,0 +1,63 @@
+import "pe"
+import "math"
+
+rule Comprehensive_Suspicious_PE {
+    meta:
+        description = "Detects a potentially malicious PE file with suspicious API calls, section anomalies, entropy checks, and binary markers."
+        author = "Brian Omulami"
+        date = "2025-03-13"
+        version = "2.5"
+        hash = "16b27034cb48820e42fbea1f401e627b8bd1678fca35cc405b100225613e8685"
+
+    strings:
+        // ASCII markers from the binary
+        $ascii1 = "Welcome to the YaraRules0x100 challenge!"
+        $ascii2 = "!This program cannot be run in DOS mode."
+        $ascii3 = "CreateMutexW"
+        $ascii4 = "api-ms-win-crt-heap-l1-1-0.dll"
+        $ascii5 = "TerminateProcess"
+        $ascii6 = "IsProcessorFeaturePresent"
+        $ascii7 = "NtQueryInformationProcess"
+
+        // Suspicious API calls
+        $api1 = "CreateProcessA"
+        $api2 = "OpenProcess"
+        $api3 = "TerminateProcess"
+        $api4 = "IsDebuggerPresent"
+        $api5 = "NtQueryInformationProcess"
+        $api6 = "VirtualAlloc"
+        $api7 = "WriteProcessMemory"
+        $api8 = "CreateRemoteThread"
+        $api9 = "GetModuleHandleW"
+        $api10 = "LoadLibraryA"
+        $api11 = "GetStartupInfoW"
+        $api12 = "GetSystemTimeAsFileTime"
+        $api13 = "GetProcAddress"
+
+        // Hex patterns extracted from suspicious.exe
+        $hex1 = { 4D 5A 90 00 03 00 00 00 04 00 00 00 FF FF 00 00 B8 00 00 00 00 00 00 00 40 00 00 00 00 00 00 00 }
+        $hex2 = { 48 1F 2B 0C 7E 78 0C 7E 78 0C 7E 78 05 06 42 78 }
+        $hex3 = { 7E 78 19 01 79 0E 7E 78 19 01 79 16 7E 78 19 01 79 }
+
+    condition:
+        uint16(0) == 0x5A4D and  // MZ header check
+        pe.number_of_sections > 1 and  // Ensures it's a valid PE file
+        filesize < 500KB and  // Reasonable file size limit
+
+        // Match at least 4 ASCII markers & 6 suspicious API calls
+        4 of ($ascii*) and 6 of ($api*) and 
+
+        // Section-based anomalies (high entropy or unusually large sections)
+        for any i in (0..pe.number_of_sections - 1): (
+            (pe.sections[i].name == ".text" and pe.sections[i].raw_data_size > 0x50000) or 
+            (pe.sections[i].name == ".rsrc" and pe.sections[i].raw_data_size > 0x20000) or
+            (math.entropy(pe.sections[i].raw_data_offset, pe.sections[i].raw_data_size) > 7.0)
+        ) and
+
+        // Entry point validation
+        pe.entry_point >= pe.sections[0].virtual_address and 
+        pe.entry_point < (pe.sections[0].virtual_address + pe.sections[0].virtual_size) and 
+
+        // Ensure at least one unique hex pattern is present
+        any of ($hex*)
+}

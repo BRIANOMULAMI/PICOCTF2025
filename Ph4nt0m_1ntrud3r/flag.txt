@@ -1,0 +1,108 @@
+┌──(brian㉿BRIAN)-[~/Desktop/PicoCtf2025/Ph4nt0m_1ntrud3r]
+└─$ subl working.txt                                                         
+                                                                                                                                                                      
+┌──(brian㉿BRIAN)-[~/Desktop/PicoCtf2025/Ph4nt0m_1ntrud3r]
+└─$ echo "YmhfNHJfYQ==" | base64 -d                                                            
+bh_4r_a   
+bh_4r_a                                                                                                                                                                      
+┌──(brian㉿BRIAN)-[~/Desktop/PicoCtf2025/Ph4nt0m_1ntrud3r]
+└─$ echo "2UfahOE=" | base64 -d                                        
+�Gڄ�                                                                                                                                                                      
+┌──(brian㉿BRIAN)-[~/Desktop/PicoCtf2025/Ph4nt0m_1ntrud3r]
+└─$ echo "bnRfdGg0dA==" | base64 -d
+nt_th4t                                                                                                                                                                      
+┌──(brian㉿BRIAN)-[~/Desktop/PicoCtf2025/Ph4nt0m_1ntrud3r]
+└─$ echo "tvjrA24=" | base64 -d
+���n                                                                                                                                                                      
+┌──(brian㉿BRIAN)-[~/Desktop/PicoCtf2025/Ph4nt0m_1ntrud3r]
+└─$ echo "cGljb0NURg==" | base64 -d
+picoCTF                                                                                                                                                                      
+┌──(brian㉿BRIAN)-[~/Desktop/PicoCtf2025/Ph4nt0m_1ntrud3r]
+└─$ echo "L0wNi1o=" | base64 -d                                            
+�Z                                                                                                                                                                      
+┌──(brian㉿BRIAN)-[~/Desktop/PicoCtf2025/Ph4nt0m_1ntrud3r]
+└─$ echo "UoocWME=" | base64 -d
+R�X�                                                                                                                                                                      
+┌──(brian㉿BRIAN)-[~/Desktop/PicoCtf2025/Ph4nt0m_1ntrud3r]
+└─$ echo "ZjE2MDk4MA==" | base64 -d
+f160980                                                                                                                                                                      
+┌──(brian㉿BRIAN)-[~/Desktop/PicoCtf2025/Ph4nt0m_1ntrud3r]
+└─$ echo "OjAKcJM=" | base64 -d
+:0
+p�                                                                                                                                                                      
+┌──(brian㉿BRIAN)-[~/Desktop/PicoCtf2025/Ph4nt0m_1ntrud3r]
+└─$ echo "9yS8VEM=" | base64 -d
+�$�TC                                                                                                                                                                      
+┌──(brian㉿BRIAN)-[~/Desktop/PicoCtf2025/Ph4nt0m_1ntrud3r]
+└─$ echo "pIe4Kg0=" | base64 -d
+                                                                                                                                                                      
+┌──(brian㉿BRIAN)-[~/Desktop/PicoCtf2025/Ph4nt0m_1ntrud3r]
+└─$ echo "XzM0c3lfdA==" | base64 -d
+_34sy_t                                                                                                                                                                      
+┌──(brian㉿BRIAN)-[~/Desktop/PicoCtf2025/Ph4nt0m_1ntrud3r]
+└─$ echo "pw+jNyo=" | base64 -d
+��7*                                                                                                                                                                      
+┌──(brian㉿BRIAN)-[~/Desktop/PicoCtf2025/Ph4nt0m_1ntrud3r]
+└─$ echo "fQ==" | base64 -d
+}                                                                                                                                                                      
+┌──(brian㉿BRIAN)-[~/Desktop/PicoCtf2025/Ph4nt0m_1ntrud3r]
+└─$ echo "Rj0JUEQ=" | base64 -d
+F=      PD                                                                                                                                                                      
+┌──(brian㉿BRIAN)-[~/Desktop/PicoCtf2025/Ph4nt0m_1ntrud3r]
+└─$ echo "kCiS66w=" | base64 -d
+�(��                                                                                                                                                                      
+┌──(brian㉿BRIAN)-[~/Desktop/PicoCtf2025/Ph4nt0m_1ntrud3r]
+└─$ echo "WwA/TjA=" | base64 -d
+[?N0                                                                                                                                                                      
+┌──(brian㉿BRIAN)-[~/Desktop/PicoCtf2025/Ph4nt0m_1ntrud3r]
+└─$ echo "XGWX6Ls=" | base64 -d
+\e��                                                                                                                                                                      
+┌──(brian㉿BRIAN)-[~/Desktop/PicoCtf2025/Ph4nt0m_1ntrud3r]
+└─$ echo "lLgvE4U=" | base64 -d
+��/�                                                                                                                                                                      
+┌──(brian㉿BRIAN)-[~/Desktop/PicoCtf2025/Ph4nt0m_1ntrud3r]
+└─$ echo "ezF0X3c0cw==" | base64 -d
+{1t_w4s                                                                                                                                                                      
+┌──(brian㉿BRIAN)-[~/Desktop/PicoCtf2025/Ph4nt0m_1ntrud3r]
+└─$ 
+
+
+############combination of the flags#####################
+#########
+{1t_w4s
+} 
+_34sy_t  
+f160980 
+picoCTF  
+nt_th4t
+bh_4r_a
+#################
+
+
+ ########The flag#############
+
+picoCTF{1t_w4snt_th4t_34sy_tbh_4r_af160980}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
