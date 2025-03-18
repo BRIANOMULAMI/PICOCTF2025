@@ -1,0 +1,10 @@
+cGljb0NURntjMDBrMWVfbTBuc3Rlcl9sMHZlc19jMDBraWVzX0FDOEZDRDc1fQ%3D%3D
+
+
+(brian㉿BRIAN)-[~/Desktop/PicoCtf2025/Cookie_Monster_Secret_Recipe]
+└─$ echo "cGljb0NURntjMDBrMWVfbTBuc3Rlcl9sMHZlc19jMDBraWVzX0FDOEZDRDc1fQ%3D%3D" | base64 -d
+picoCTF{c00k1e_m0nster_l0ves_c00kies_AC8FCD75}base64: invalid input
+                                                                                  
+############flag########################
+picoCTF{c00k1e_m0nster_l0ves_c00kies_AC8FCD75}
+
