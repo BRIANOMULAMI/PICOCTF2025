@@ -1,0 +1,66 @@
+---
+
+Options:
+A) *Play the game*
+B) *Search the Ether for the flag*
+[a/b] > b
+
+Nyx says, "Oh, I've read about this Ei. You don't want to submit a different
+players flag! That's against the rules! Even sharing artifact downloads could
+lead to you finding someone else's flag."
+
+---
+(Press Enter to continue...)
+---
+
+"Got it."
+
+---
+(Press Enter to continue...)
+---
+
+Options:
+A) *Play the game*
+B) *Search the Ether for the flag*
+[a/b] > a
+
+"Good choice, Ei," Nyx says, "You never want to share flags or artifact
+downloads."
+
+---
+(Press Enter to continue...)
+---
+
+ Playing the Game
+Playing the Game: 100%|██████████████████████████████████████ [time left: 00:00]
+Playing the Game completed successfully!
+
+---
+(Press Enter to continue...)
+---
+
+"That was fun!" Eibhilin exclaims, "I found the flag!"
+
+---
+(Press Enter to continue...)
+---
+
+Nyx says, "Great job, Ei! I've read that a lot of players create writeups of
+interesting challenges they solve during the competition. Just be sure to wait
+to publish them until after the winners have been announced. We can work on
+that together if you'd like."
+
+---
+(Press Enter to continue...)
+---
+
+"Thanks, Nyx! Here's the flag I found: picoCTF{m1113n1um_3d1710n_9a3a7333}"
+
+---
+(Press Enter to continue...)
+---
+
+###########flag#################
+picoCTF{m1113n1um_3d1710n_9a3a7333}
+
+
